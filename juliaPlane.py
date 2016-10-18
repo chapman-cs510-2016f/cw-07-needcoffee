@@ -7,6 +7,12 @@ import matplotlib.pyplot as plt
 
 class JuliaPlane(cpnp.ComplexPlaneNP):
     """
+    This module allows the user to create a plane of
+    complex numbers, which can then be transformed 
+    under the function julia(c). The show function then 
+    provides the resulting Julia set based on a color
+    map.
+
     Attributes:
         xmax (float) : maximum horizontal axis value
         xmin (float) : minimum horizontal axis value
