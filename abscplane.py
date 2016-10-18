@@ -58,19 +58,6 @@ class AbsComplexPlane(ABC):
         f    (func)  : function displayed in the plane
     """ 
     
-    # Class attributes, to be set during an __init__
-    xmin  = NotImplemented
-    xmax  = NotImplemented
-    xlen  = NotImplemented
-    ymin  = NotImplemented
-    ymax  = NotImplemented
-    ylen  = NotImplemented
-    # The implementation type of plane is up to the user
-    plane = NotImplemented
-    # Note that the default f should be the identity: 
-    # (lambda x : x)
-    f     = NotImplemented
-    
     # The @abstractmethod "decorator" forces all subclasses
     # to provide implementations for the following method
     @abstractmethod
